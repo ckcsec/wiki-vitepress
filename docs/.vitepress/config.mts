@@ -161,7 +161,7 @@ export default defineConfig({
       {
         text: "开源项目",
         items: [
-            { text: "NGCBot", link: "/cooperation/prject/NGCBot"},
+            { text: "NGCBot", link: "/cooperation/project/NGCBot"},
           ]
       }
     ],
