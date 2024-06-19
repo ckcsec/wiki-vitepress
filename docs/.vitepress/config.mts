@@ -121,7 +121,7 @@ export default defineConfig({
           items: [
             { text: 'CobaltStrike的使用', link: "/web/tools/CobaltStrike的使用" },
             { text: 'Sqlmap的使用', link: "/web/tools/Sqlmap的使用" },
-            { text: 'Namp的使用', link: "/web/tools/Namp的使用" },
+            { text: 'Nmap的使用', link: "/web/tools/Nmap的使用" },
             { text: 'meterpreter', link: "/web/tools/meterpreter" },
             { text: 'PowerShell攻击指南', link: "/web/tools/PowerShell攻击指南" },           
 
