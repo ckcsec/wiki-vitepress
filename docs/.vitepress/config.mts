@@ -81,10 +81,12 @@ export default defineConfig({
           text: '基础篇',
           items: [
             { text: '安服工程师基础', link: "/web/basis/安服工程师基础" },
+            { text: '文件上传漏洞', link: "/web/basis/文件上传漏洞" },
+            { text: '文件包含漏洞', link: "/web/basis/文件包含漏洞" },
+            { text: 'SQL注入漏洞', link: "/web/basis/SQL注入漏洞" },
             { text: 'XSS跨站脚本攻击', link: "/web/basis/XSS跨站脚本攻击" },
-            { text: 'CSRF', link: "/web/basis/CSRF" },
-            { text: 'SSRF', link: "/web/basis/SSRF" },
-            { text: '文件包含漏洞', link: "/web/basis/文件包含漏洞" }
+            { text: 'CSRF跨站请求伪造', link: "/web/basis/CSRF" },
+            { text: 'SSRF服务端请求伪造', link: "/web/basis/SSRF" },
           ]
         }
       ],
