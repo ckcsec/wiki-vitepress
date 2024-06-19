@@ -5,6 +5,7 @@ export default defineConfig({
   title: "ckcsec",
   description: "CKCsec安全研究院",
   lastUpdated: true,
+  head: [['link', { rel: 'icon', href: 'https://ckcsec.oss-cn-hangzhou.aliyuncs.com/img/ckc.jpg' }]],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
