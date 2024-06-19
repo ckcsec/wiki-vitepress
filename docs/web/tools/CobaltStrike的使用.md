@@ -16,7 +16,7 @@ Cobalt Strike是一款美国Red Team开发的渗透测试神器，常被业界�
 
 服务端： ubuntu 20.04（国外vps服务器）
 
-首先购买一台国外的vps服务器作为服务端，这里推荐[www.vulrt.com](www.vulrt.com)或者[my.racknerd.com](https://my.racknerd.com/)，当然你也可以用虚拟机，但记住一定要是Linux。
+首先购买一台国外的vps服务器作为服务端，当然你也可以用虚拟机，但记住一定要是Linux。
 
 ### 安装java环境
 
