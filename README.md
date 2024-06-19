@@ -23,8 +23,10 @@ CKCsec安全研究院是一个面对网络安全从业者的知识库，涉及We
 
 ## 鸣谢
 
-感谢大佬开发的框架
+感谢以下项目作为本文库的核心技术支撑
 
 https://vitepress.dev/
 
 https://github.com/vuejs/vitepress
+
+https://vercel.com/
