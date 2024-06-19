@@ -162,6 +162,7 @@ export default defineConfig({
         text: "开源项目",
         items: [
             { text: "NGCBot", link: "/cooperation/project/NGCBot"},
+            { text: "ckcsecwiki", link: "/cooperation/project/ckcsecwiki"},
           ]
       }
     ],
