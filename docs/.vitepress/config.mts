@@ -179,11 +179,12 @@ export default defineConfig({
       provider: 'local'
     },
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/ckcsec/' }
+      { icon: 'github', link: 'https://github.com/ckcsec/wiki-vitepress' }
     ],
     footer: {
+    footerHtml: true
       message: '基于 MIT 许可发布',
-      copyright: 'Copyright © 2021-2024 ckcsec'
+      copyright: 'Copyright © 2021-2024 <a href="http://beian.miit.gov.cn/">鄂公网安备 42108302000084号</a>'
     }
   }
 })
