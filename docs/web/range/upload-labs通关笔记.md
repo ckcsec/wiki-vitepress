@@ -8,7 +8,12 @@ title: upload-labs通关笔记
 
 环境：[upload-labs](https://github.com/c0ny1/upload-labs)（建议用集成环境压缩包或者是docker搭建，手工搭建部分pass可能无法通关）
 
-工具：burpsuite 2020.12.1
+集成环境下载 一键启动
+
+https://github.com/c0ny1/upload-labs/releases/tag/0.1
+
+![](https://ckcsec.oss-cn-hangzhou.aliyuncs.com/img/image-20240619214244415.png)
+
 
 ## Pass-01 JS绕过
 
