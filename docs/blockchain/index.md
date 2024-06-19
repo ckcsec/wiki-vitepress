@@ -7,9 +7,7 @@ title: 区块链入门
 ## 技术底层
 北京大学肖臻老师《区块链技术与应用》公开课
 
-<a-alert type="success" message="https://www.bilibili.com/video/BV1Vt411X7JF/?vd_source=46b87a83ff1ac8f06aa40d6801a00b21" description="" showIcon>
-</a-alert>
-<br/>
+https://www.bilibili.com/video/BV1Vt411X7JF/?vd_source=46b87a83ff1ac8f06aa40d6801a00b21
 
 ## 基本概念
 
