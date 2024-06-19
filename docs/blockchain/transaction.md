@@ -6,15 +6,11 @@ title: 区块链市场
 
 币安注册邀请码 手续费减免20%
 
-<a-alert type="success" message="https://accounts.suitechsui.io/register?ref=583886376" description="" showIcon>
-</a-alert>
-<br/>
+https://accounts.suitechsui.io/register?ref=583886376
 
 欧意注册邀请码 手续费减免20%
 
-<a-alert type="success" message="https://ouxyi.space/join/89852409" description="" showIcon>
-</a-alert>
-<br/>
+https://ouxyi.space/join/89852409
 
 ## 市场
 ### 何为币圈市场？
