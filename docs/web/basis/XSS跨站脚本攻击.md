@@ -47,6 +47,18 @@ echo $_GET\['get'\];
 
 ![](https://cdn-zhiji-icu.oss-cn-hangzhou.aliyuncs.com/2021/tyxxss-2.png)
 
+#### 案例
+
+发货100 cms
+
+```
+<script>alert(1)</script>
+```
+
+http://123.57.94.143/
+
+![](https://ckcsec.oss-cn-hangzhou.aliyuncs.com/img/%E5%9B%BE%E7%89%871.png)
+
 ### XSS-Stored存储型（持久型）
 
 存储型XSS也叫持久型XSS，存储的意思就是Payload是有经过存储的，当一个页面存在存储型XSS的时候，XSS注入成功后，那么每次访问该页面都将触发XSS，典型的例子是：
@@ -62,6 +74,12 @@ echo $_GET\['get'\];
 攻击流程图如下
 
 ![](https://cdn-zhiji-icu.oss-cn-hangzhou.aliyuncs.com/2021/tyxxss-3.png)
+
+#### 案例
+
+DVWA靶场  XSS（Reflected） 
+
+![](https://ckcsec.oss-cn-hangzhou.aliyuncs.com/img/%E5%9B%BE%E7%89%872.png)
 
 ### XSS-DOM型
 
@@ -83,6 +101,12 @@ document.write(name);
 ```
 
 通过页面加入img标签的的方式发起了一个GET请求，应该是一个访问来源记录的东西，而对于Referer的值没有做处理，于是就存在DOM型XSS。
+
+#### 案例
+
+jQuery-with-XSS
+
+https://vulnerabledoma.in/jquery_htmlPrefilter_xss.html
 
 主要的类型就是上面三种，还有些其他类型这里也做一个简单的介绍
 
@@ -191,7 +215,25 @@ MsgBox 'xss'">
 
 * [xsscrapy](https://github.com/DanMcInerney/xsscrapy)
 
-## 经典XSS_POC整理（博客持续更新）
+## 总结
+
+漏洞原理：接受输入数据，输出显示数据后解析执行
+
+基础类型：反射(非持续)，存储(持续)，DOM-BASE
+
+常用标签：https://www.freebuf.com/articles/web/340080.html
+
+攻击利用：盲打，COOKIE盗取，凭据窃取，页面劫持，网络钓鱼，权限维持等
+
+挖掘方法：代码审计、XRAY扫描、XSCAN、手工探测、burp_fuzz
+
+安全修复：字符过滤，实例化编码，http_only，CSP防护，WAF拦截等
+
+测试流程：看输出想输入在哪里，更改输入代码看执行（标签，过滤决定）
+
+> 漏洞挖掘非一朝一夕  贵在坚持！
+
+## 经典XSS_POC整理（持续更新）
 
 **jQuery-with-XSS**
 
