@@ -11,13 +11,13 @@ hero:
   actions:
     - theme: brand
       text: 开始使用
-      link: /markdown-examples
+      link: /about/
     - theme: alt
       text: 支持项目
-      link: /api-examples
+      link: /about/support
     - theme: alt
       text: GitHub
-      link: https://github.com/ckcsec/
+      link: https://github.com/ckcsec/wiki-vitepress
   image:
     src: https://ckcsec.oss-cn-hangzhou.aliyuncs.com/img/vitepress-logo-large.webp
     alt: VitePress
