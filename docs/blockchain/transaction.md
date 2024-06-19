@@ -4,14 +4,6 @@ title: 区块链市场
 
 # 区块链市场
 
-币安注册邀请码 手续费减免20%
-
-https://accounts.suitechsui.io/register?ref=583886376
-
-欧意注册邀请码 手续费减免20%
-
-https://ouxyi.space/join/89852409
-
 ## 市场
 ### 何为币圈市场？
 币圈分为两种大型市场，一级市场和二级市场，一级市场我们简单地说就是一个币没有上线前都是称之为一级市场，二级市场就是我们币在一级市场流程走完上线交易所后称之为二级市场，也可以理解为二级市场就是属于发行后，所有人都可以在交易买卖的公然市场（交易所）
@@ -39,3 +31,67 @@ https://ouxyi.space/join/89852409
 空投听起来对于用户来说似乎是不劳而获，而项目方虽然也没有太多实际成本，明显是一种让利行为。其背后的逻辑其实也不难理解：通过免费的方式发放代币进行推广，大众的口碑和后续使用代币会释放非常积极的信号。这对于生态或者项目来说，都是一种长期利好的方式。
 
 以今年最为火爆的L2公链Arbitrum为例，项目方向社群用户空投的 ARB 数量为 11.62 亿，获得空投的钱包地址数约有 62.5 万个，平均每个地址空投的 ARB 数量为 1859 个。 ARB 空投带来的财富效应，不仅让社群用户为之狂欢，也侧面帮助了生态发展。事实上，在空投结束后，其生态用户数量和活跃度并未因空投激励暂告一段落而冷却。 Dune 数据显示，Arbitrum 上的日活跃用户和交易量仍在攀新高
+
+## 市场工具
+
+### 看盘
+
+**一级市场**
+
+[birdeye](https://birdeye.so/)
+
+[ave](https://ave.ai/)
+
+[dex](https://dexscreener.com/)
+
+**二级市场**
+
+[币安](https://accounts.suitechsui.io/register?ref=583886376)
+
+[欧意](https://ouxyi.space/join/89852409)
+
+### 查链
+
+BTC链
+
+https://btcscan.org/
+
+ETH链
+
+https://etherscan.io/
+
+SOL链
+
+https://solscan.io/
+
+TRX链
+
+https://tronscan.org/#/
+
+BSC链
+
+https://bscscan.com/
+
+马蹄链
+
+https://polygonscan.com/
+
+### 资讯
+
+金色财经
+币coin
+雪球
+金十数据
+......
+
+### 钱包
+
+[MetaMask（ETH链）](https://metamask.io/)
+
+[phantom（SOL链）](https://phantom.app/)
+
+[Tonkeeper（TON链）](https://tonkeeper.com/)
+
+[TOKEN POCKET](https://www.tokenpocket.pro/)
+
+[OKX](https://www.okx.com/zh-hans/web3)
