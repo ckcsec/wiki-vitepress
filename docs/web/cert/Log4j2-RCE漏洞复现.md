@@ -1,15 +1,5 @@
 ---
 title: Log4j2_RCE漏洞复现
-comments: true
-tags:
-  - Log4j2_RCE
-  - cve
-categories: cve
-keywords: Log4j2
-top_img: 'https://cdn-zhiji-icu.oss-cn-hangzhou.aliyuncs.com/2021/log4j-0.png'
-cover: 'https://cdn-zhiji-icu.oss-cn-hangzhou.aliyuncs.com/2021/log4j-0.png'
-abbrlink: 80c2d2
-date: 2021-12-20 10:58:30
 ---
 
 #  Log4j2_RCE漏洞复现
