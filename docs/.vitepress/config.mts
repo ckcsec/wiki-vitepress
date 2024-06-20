@@ -81,6 +81,7 @@ export default defineConfig({
           text: '基础篇',
           items: [
             { text: '安服工程师基础', link: "/web/basis/安服工程师基础" },
+            { text: '弱口令漏洞', link: "/web/basis/弱口令漏洞" },
             { text: '文件上传漏洞', link: "/web/basis/文件上传漏洞" },
             { text: '文件包含漏洞', link: "/web/basis/文件包含漏洞" },
             { text: 'SQL注入漏洞', link: "/web/basis/SQL注入漏洞" },
