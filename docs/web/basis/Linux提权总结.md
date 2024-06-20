@@ -1,14 +1,5 @@
 ---
 title: Linux提权总结
-comments: true
-tags:
-  - Linux提权
-categories: 基础知识
-keywords: Linux提权
-top_img: 'https://cdn-zhiji-icu.oss-cn-hangzhou.aliyuncs.com/2021/linux提权-1.jpg'
-cover: 'https://cdn-zhiji-icu.oss-cn-hangzhou.aliyuncs.com/2021/linux提权-1.jpg'
-abbrlink: 7ba2e4be
-date: 2021-12-19 15:55:07
 ---
 
 # Linux提权总结
