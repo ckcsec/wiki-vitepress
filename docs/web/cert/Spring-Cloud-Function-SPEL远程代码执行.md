@@ -1,15 +1,5 @@
 ---
 title: Spring_Cloud_Function_SPEL远程代码执行
-comments: true
-tags:
-  - Spring_Cloud_Function_SPEL
-  - RCE
-categories: cve
-keywords: Spring_Cloud_Function_SPEL
-top_img: 'https://cdn-zhiji-icu.oss-cn-hangzhou.aliyuncs.com/2021/Spring-1.jpg'
-cover: 'https://cdn-zhiji-icu.oss-cn-hangzhou.aliyuncs.com/2021/Spring-1.jpg'
-abbrlink: aa56ae7d
-date: 2022-03-26 23:33:12
 ---
 
 # Spring Cloud Function SPEL 远程命令执行漏洞
