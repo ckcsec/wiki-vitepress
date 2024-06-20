@@ -1,8 +1,8 @@
 ---
-title: kali2021.1+docker搭建Vulstudy
+title: Vulstudy靶场
 ---
 
-# kali2021.1+docker搭建Vulstudy
+# Vulstudy靶场
 
 Vulstudy是专门收集当下流行的漏洞学习平台，并将其制作成docker镜像，方便大家快速搭建环境，节省搭建时间，专注于漏洞学习上。包含以下漏洞平台
 
@@ -25,7 +25,7 @@ git clone https://github.com/c0ny1/vulstudy.git
 
 ## 2、配置docker
 
-因为docker是国外的，所以在拉取镜像的时候特别慢，故需要配置下国内的镜像加速。这里直接访问[阿里云的容器镜像服务]( https://cr.console.aliyun.com/ )根据centos系统的配置文档配置即可
+因为docker是国外的，所以在拉取镜像的时候特别慢，故需要配置下国内的镜像加速。这里直接访问[阿里云的容器镜像服务]( https://cr.console.aliyun.com/ )根据自己系统的配置文档配置即可
 
 ![](https://cdn-zhiji-icu.oss-cn-hangzhou.aliyuncs.com/2021/bac-2.png)
 
