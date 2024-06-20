@@ -106,6 +106,7 @@ export default defineConfig({
         {
           text: '靶场篇',
           items: [
+            { text: 'Vulstudy靶场', link: "/web/range/Vulstudy靶场" },
             { text: 'DVWA通关笔记', link: "/web/range/DVWA通关笔记" },
             { text: 'sqli-labs通关笔记', link: "/web/range/sqli-labs通关笔记" },
             { text: 'upload-labs通关笔记', link: "/web/range/upload-labs通关笔记" },
