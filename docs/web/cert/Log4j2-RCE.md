@@ -1,8 +1,8 @@
 ---
-title: Log4j2_RCE漏洞复现
+title: Log4j2_RCE
 ---
 
-#  Log4j2_RCE漏洞复现
+#  Log4j2_RCE
 
 ## 漏洞简介
 
