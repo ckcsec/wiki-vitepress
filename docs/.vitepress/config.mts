@@ -24,10 +24,10 @@ export default defineConfig({
           { text: "基础篇",  link: '/web/basis/'},
           { text: "靶场篇", link: '/web/range/'},
           { text: "工具篇", link: '/web/tools/'},
-          { text: "漏洞复现篇", link: '/web/cert/'},
-          { text: "SRC", link: '/web/SRC/'},
-          { text: "应急响应篇", link: '/web/emer/'},
-          { text: "环境避坑篇", link: '/web/environment/'}      
+          { text: "漏洞速递", link: '/web/cert/'},
+          { text: "应急响应", link: '/web/emer/'},
+          { text: "环境避坑", link: '/web/environment/'},
+          { text: "SRC", link: '/web/SRC/'}
         ]
       },
       {
@@ -137,7 +137,7 @@ export default defineConfig({
       ],
       '/web/cert/': [
         {
-          text: '漏洞复现',
+          text: '漏洞速递',
           items: [
             { text: 'Grafana文件读取漏洞（CVE-2021-43798）', link: "/web/cert/Grafana文件读取漏洞（CVE-2021-43798）" },  
             { text: 'apisix未授权访问（CVE-2021-45232）', link: "/web/cert/apisix未授权访问（CVE-2021-45232）" },
