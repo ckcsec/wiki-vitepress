@@ -88,7 +88,7 @@ export default defineConfig({
             { text: 'XSS跨站脚本攻击', link: "/web/basis/XSS跨站脚本攻击" },
             { text: 'CSRF跨站请求伪造', link: "/web/basis/CSRF跨站请求伪造" },
             { text: 'SSRF服务端请求伪造', link: "/web/basis/SSRF服务端请求伪造" },
-            { text: 'Linux提权总结', link: "/web/basis/Linux提权总结" }
+            { text: 'Linux提权总结', link: "/web/basis/Linux提权总结" },
             { text: '反弹shell备忘录', link: "/web/basis/反弹shell备忘录" }
           ]
         }
@@ -118,7 +118,7 @@ export default defineConfig({
             { text: 'Vulnhub-dc9', link: "/web/range/Vulnhub-dc9" },
             { text: 'VulnHub-Kioptrix3', link: "/web/range/VulnHub-Kioptrix3" },
             { text: 'Vulnhub-LazySysAdmin1', link: "/web/range/Vulnhub-LazySysAdmin1" },
-            { text: 'Vulnhub-The-Ether', link: "/web/range/Vulnhub-The-Ether" },        
+            { text: 'Vulnhub-The-Ether', link: "/web/range/Vulnhub-The-Ether" }       
           ]
         }
       ],     
@@ -146,7 +146,7 @@ export default defineConfig({
             { text: 'Clash-for-windows远程代码执行', link: "/web/cert/Clash-for-windows远程代码执行" },
             { text: 'Spring-Cloud-Function-SPEL远程代码执行', link: "/web/cert/Spring-Cloud-Function-SPEL远程代码执行" },  
             { text: 'Spring-Cloud-Gateway远程代码执行（CVE-2022-22947）', link: "/web/cert/Spring-Cloud-Gateway远程代码执行（CVE-2022-22947）" },  
-            { text: 'Log4j2-RCE', link: "/web/cert/Log4j2-RCE" },  
+            { text: 'Log4j2-RCE', link: "/web/cert/Log4j2-RCE" }
           ]
         }
       ],
