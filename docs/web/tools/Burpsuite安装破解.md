@@ -12,7 +12,9 @@ title: Burpsuite安装破解
 https://www.123pan.com/s/LPX9-ktD5v.html
 提取码:osoX
 
-Burp Suite 是一款集成化的渗透测试工具，包含了很多功能，Burp Suite是由java语言编写，所以他的安装以及使用需要Java环境，关于java环境的安装看[我的上一篇文章](https://zhiji.icu/posts/78bf1742/)，下面我就来简单的介绍一下它的安装破解过程。
+Burp Suite 是一款集成化的渗透测试工具，包含了很多功能，Burp Suite是由java语言编写，所以他的安装以及使用需要Java环境，下面我就来简单的介绍一下它的安装破解过程。
+
+## 破解过程
 
 ## 破解过程
 
@@ -22,22 +24,35 @@ Burp Suite 是一款集成化的渗透测试工具，包含了很多功能，Bur
 java.exe -noverify -javaagent:BurpSuiteLoader.jar -jar burpsuite_pro_v2020.12.1.jar
 ```
 
-![](https://img-blog.csdnimg.cn/20210204155029160.png)
+![](https://ckcsec.oss-cn-hangzhou.aliyuncs.com/img/20210204155029160.png)
+
 2、双击上面编写的程序Burp Suite.cmd运行，打开后提示需要输入key
-![](https://img-blog.csdnimg.cn/20210204155140956.png?x-oss-process=image)
-2、这个时候，我们回到目录双击运行BurpSuite KeyGen By Uncia.jar，将lisense里的码复制（这里不能右键复制，用ctrl+c/v），然后粘贴到burpsuite的key里，然后点Next
-![](https://img-blog.csdnimg.cn/2021020415541217.png?x-oss-process=image)
+
+![](https://ckcsec.oss-cn-hangzhou.aliyuncs.com/img/20210204155140956.png)
+
+2、这个时候，我们回到目录双击运行BurpSuite KeyGen By Uncia.jar，将lisense里的码复制（这里不能右键复制，用ctrl+c/v)，然后粘贴到burpsuite的key里，然后点Next
+
+![](https://ckcsec.oss-cn-hangzhou.aliyuncs.com/img/2021020415541217.png)
+
 3、然后点击Manual activation
-![](https://img-blog.csdnimg.cn/2021020415553136.png?x-oss-process=image)
+
+![](https://ckcsec.oss-cn-hangzhou.aliyuncs.com/img/2021020415553136.png)
+
 4、点击copy request复制密钥。
-![](https://img-blog.csdnimg.cn/20210204155734746.png?x-oss-process=image)
-5、然后粘贴到burpsuite keygen里的第二个窗口。它会自动在第三个窗口生成密钥![](https://img-blog.csdnimg.cn/20210204155707219.png?x-oss-process=image)
+
+![](https://ckcsec.oss-cn-hangzhou.aliyuncs.com/img/20210204155734746.png)
+
+5、然后粘贴到burpsuite keygen里的第二个窗口。它会自动在第三个窗口生成密钥
+
+![](https://ckcsec.oss-cn-hangzhou.aliyuncs.com/img/20210204155707219.png)
+
 6、然后再将第三个窗口生成的密钥复制到burp suite里的第三个窗口里，然后点击Next下一步
-![](https://img-blog.csdnimg.cn/20210204155937281.png?x-oss-process=image)
+
+![](https://ckcsec.oss-cn-hangzhou.aliyuncs.com/img/20210204155937281.png)
 
 7、最后单击Finish，结束破解过程。
 
-![](https://img-blog.csdnimg.cn/20210204160144773.png?x-oss-process=image)
+![](https://ckcsec.oss-cn-hangzhou.aliyuncs.com/img/20210204160144773.png)
 
 8、但是每次运行时都有命令窗口出现，不好看，所以我们写一个程序做个后期处理
 
