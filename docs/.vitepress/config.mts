@@ -86,7 +86,9 @@ export default defineConfig({
             { text: 'SQL注入漏洞', link: "/web/basis/SQL注入漏洞" },
             { text: 'XSS跨站脚本攻击', link: "/web/basis/XSS跨站脚本攻击" },
             { text: 'CSRF跨站请求伪造', link: "/web/basis/CSRF跨站请求伪造" },
-            { text: 'SSRF服务端请求伪造', link: "/web/basis/SSRF服务端请求伪造" }
+            { text: 'SSRF服务端请求伪造', link: "/web/basis/SSRF服务端请求伪造" },
+            { text: 'Linux提权总结', link: "/web/basis/Linux提权总结" }
+            { text: '反弹shell备忘录', link: "/web/basis/反弹shell备忘录" }
           ]
         }
       ],
