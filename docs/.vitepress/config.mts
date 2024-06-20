@@ -135,6 +135,22 @@ export default defineConfig({
           ]
         }
       ],
+      '/web/cert/': [
+        {
+          text: '漏洞复现',
+          items: [
+            { text: 'Grafana文件读取漏洞（CVE-2021-43798）', link: "/web/cert/Grafana文件读取漏洞（CVE-2021-43798）" },  
+            { text: 'apisix未授权访问（CVE-2021-45232）', link: "/web/cert/apisix未授权访问（CVE-2021-45232）" },
+            { text: 'polkit的pkexec中的本地权限提升漏洞（CVE-2021-4034）', link: "/web/cert/polkit的pkexec中的本地权限提升漏洞（CVE-2021-4034）" },
+            { text: '向日葵RCE（CNVD-2022-10270）', link: "/web/cert/向日葵RCE（CNVD-2022-10270）" },
+            { text: 'Clash-for-windows远程代码执行', link: "/web/cert/Clash-for-windows远程代码执行" },
+            { text: 'Spring-Cloud-Function-SPEL远程代码执行', link: "/web/cert/Spring-Cloud-Function-SPEL远程代码执行" },  
+            { text: 'Spring-Cloud-Gateway远程代码执行（CVE-2022-22947）', link: "/web/cert/Spring-Cloud-Gateway远程代码执行（CVE-2022-22947）" },  
+            { text: 'Log4j2-RCE', link: "/web/cert/Log4j2-RCE" },  
+          ]
+        }
+      ],
+
       '/blockchain/': [
         {
           text: '区块链',
