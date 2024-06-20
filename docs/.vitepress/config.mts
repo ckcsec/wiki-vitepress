@@ -130,6 +130,7 @@ export default defineConfig({
             { text: 'CobaltStrike的使用', link: "/web/tools/CobaltStrike的使用" },
             { text: 'Sqlmap的使用', link: "/web/tools/Sqlmap的使用" },
             { text: 'Nmap的使用', link: "/web/tools/Nmap的使用" },
+            { text: 'AWVS的安装破解', link: "/web/tools/AWVS的安装破解" },
             { text: 'meterpreter', link: "/web/tools/meterpreter" },
             { text: 'PowerShell攻击指南', link: "/web/tools/PowerShell攻击指南" },  
           ]
