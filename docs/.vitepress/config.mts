@@ -182,6 +182,14 @@ export default defineConfig({
           ]
       }
     ],
+      '/redteam/免杀对抗/': [      
+      {
+        text: "免杀对抗",
+        items: [
+            { text: "免杀技术探讨（一）", link: "/redteam/免杀对抗/免杀技术探讨（一）"},
+          ]
+      }
+    ],
     '/cooperation/project/': [      
       {
         text: "开源项目",
