@@ -110,7 +110,6 @@ export default defineConfig({
             { text: 'DVWA通关笔记', link: "/web/range/DVWA通关笔记" },
             { text: 'sqli-labs通关笔记', link: "/web/range/sqli-labs通关笔记" },
             { text: 'upload-labs通关笔记', link: "/web/range/upload-labs通关笔记" },
-            { text: 'kali-docker搭建Vulstudy', link: "/web/range/kali-docker搭建Vulstudy" },
             { text: 'Vulnhub-acid', link: "/web/range/Vulnhub-acid.md" },
             { text: 'Vulnhub-billub0x', link: "/web/range/Vulnhub-billub0x" },
             { text: 'Vulnhub-Breach1', link: "/web/range/Vulnhub-Breach1" },
