@@ -1,16 +1,5 @@
 ---
 title: Clash_for_windows远程代码执行
-comments: true
-tags:
-  - cve
-  - clash
-  - rce
-categories: cve
-keywords: clash
-top_img: https://cdn-zhiji-icu.oss-cn-hangzhou.aliyuncs.com/2021/clash.png
-cover: https://cdn-zhiji-icu.oss-cn-hangzhou.aliyuncs.com/2021/clash.png
-abbrlink: 21b62bea
-date: 2022-02-27 20:32:20
 ---
 
 ## 遵纪守法
