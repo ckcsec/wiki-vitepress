@@ -1,19 +1,8 @@
 ---
 title: 反弹shell备忘录
-top_img: 'https://cdn-zhiji-icu.oss-cn-hangzhou.aliyuncs.com/2021/revshells.png'
-cover: 'https://cdn-zhiji-icu.oss-cn-hangzhou.aliyuncs.com/2021/revshells.png'
-categories: 反弹shell
-tags:
-  - 反弹shell
-keywords: 反弹shell
-comments: true
-abbrlink: '5763537'
-date: 2021-08-12 17:08:46
 ---
 
 # 反弹shell备忘录
-
-本文转载自著名开源社区github，担心哪天老外不开源了，所以这里做个记录（把老外的开源文档拖下来了），有一说一老外别的不行，这种技术博客写的是真顶，我这里直接拖下来也算是为中华网络安全之崛起做贡献了。
 
 ## 反弹shell
 
