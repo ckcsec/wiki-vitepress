@@ -178,7 +178,8 @@ export default defineConfig({
         text: "流量隐匿",
         items: [
             { text: "基于代理池", link: "/redteam/流量隐匿/基于代理池"},
-            { text: "基于云函数", link: "/redteam/流量隐匿/基于云函数"}
+            { text: "基于云函数", link: "/redteam/流量隐匿/基于云函数"},
+            { text: "NDAY批量上线", link: "/redteam/流量隐匿/NDAY批量上线"}
           ]
       }
     ],
