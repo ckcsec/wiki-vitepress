@@ -6,7 +6,9 @@ title: 方略知识管理系统SQL注入
 
 ## FOFA
 
+```
 host="firstlight.cn" && country="CN" && (title="大学" || title="学院")
+```
 
 ## 漏洞地址
 
