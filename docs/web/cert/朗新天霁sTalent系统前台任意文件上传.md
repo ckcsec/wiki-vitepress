@@ -1,8 +1,8 @@
 ---
-title: 朗新天霁sTalent系统前台任意文件上传
+title: 朗新天霁sTalent任意文件上传
 ---
 
-# 朗新天霁sTalent系统前台任意文件上传
+# 朗新天霁sTalent前台任意文件上传
 
 ## 漏洞厂商
 
