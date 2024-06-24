@@ -144,7 +144,7 @@ export default defineConfig({
             { text: '蓝凌EIS 8.0新版前台文件上传漏洞', link: "/web/cert/蓝凌EIS 8.0新版前台文件上传漏洞" }, 
             { text: '朗新天霁sTalent系统前台任意文件上传', link: "/web/cert/朗新天霁sTalent系统前台任意文件上传" },
             { text: '浙江宇视科技有限公司SQL注入漏洞', link: "/web/cert/浙江宇视科技有限公司SQL注入漏洞" },
-            { text: '方略知识管理系统通杀', link: "/web/cert/方略知识管理系统通杀" },
+            { text: '方略知识管理系统SQL注入', link: "/web/cert/方略知识管理系统SQL注入" },
           ]
         }
       ],
