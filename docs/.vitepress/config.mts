@@ -141,9 +141,9 @@ export default defineConfig({
         {
           text: '漏洞速递',
           items: [
-            { text: '蓝凌EIS8.0新版前台文件上传漏洞', link: "/web/cert/蓝凌EIS8.0前台文件上传" }, 
-            { text: '朗新天霁sTalent系统前台任意文件上传', link: "/web/cert/朗新天霁sTalent前台任意文件上传" },
-            { text: '浙江宇视科技有限公司SQL注入漏洞', link: "/web/cert/浙江宇视科技SQL注入" },
+            { text: '蓝凌EIS8.0前台文件上传', link: "/web/cert/蓝凌EIS8.0前台文件上传" }, 
+            { text: '朗新天霁sTalent前台任意文件上传', link: "/web/cert/朗新天霁sTalent前台任意文件上传" },
+            { text: '浙江宇视科技SQL注入', link: "/web/cert/浙江宇视科技SQL注入" },
             { text: '方略知识管理系统SQL注入', link: "/web/cert/方略知识管理系统SQL注入" },
           ]
         }
