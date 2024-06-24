@@ -8,6 +8,10 @@ Acunetix Web Vulnerability Scanner（AWVS）经典商业漏扫工具
 
 ## 下载地址
 
+本文破解工具均来自于Pwn3rzs大神的频道，致敬前辈的无私共享精神，后续工具更新可直接参考频道更新即可
+
+频道地址：https://t.me/Pwn3rzs
+
 Windows: 
 
 https://ponies.cloud/scanner_web/acunetix/Acunetix-v24.4.240514098-Windows-Pwn3rzs-CyberArsenal.rar
