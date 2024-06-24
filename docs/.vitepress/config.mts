@@ -141,14 +141,10 @@ export default defineConfig({
         {
           text: '漏洞速递',
           items: [
-            { text: 'Grafana文件读取漏洞（CVE-2021-43798）', link: "/web/cert/Grafana文件读取漏洞（CVE-2021-43798）" },  
-            { text: 'apisix未授权访问（CVE-2021-45232）', link: "/web/cert/apisix未授权访问（CVE-2021-45232）" },
-            { text: 'polkit的pkexec中的本地权限提升漏洞（CVE-2021-4034）', link: "/web/cert/polkit的pkexec中的本地权限提升漏洞（CVE-2021-4034）" },
-            { text: '向日葵RCE（CNVD-2022-10270）', link: "/web/cert/向日葵RCE（CNVD-2022-10270）" },
-            { text: 'Clash-for-windows远程代码执行', link: "/web/cert/Clash-for-windows远程代码执行" },
-            { text: 'Spring-Cloud-Function-SPEL远程代码执行', link: "/web/cert/Spring-Cloud-Function-SPEL远程代码执行" },  
-            { text: 'Spring-Cloud-Gateway远程代码执行（CVE-2022-22947）', link: "/web/cert/Spring-Cloud-Gateway远程代码执行（CVE-2022-22947）" },  
-            { text: 'Log4j2-RCE', link: "/web/cert/Log4j2-RCE" }
+            { text: '蓝凌EIS 8.0新版前台文件上传漏洞', link: "/web/cert/蓝凌EIS 8.0新版前台文件上传漏洞" }, 
+            { text: '文件上传-朗新天霁EHR系统', link: "/web/cert/文件上传-朗新天霁EHR系统" },
+            { text: '浙江宇视科技有限公司SQL注入漏洞', link: "/web/cert/浙江宇视科技有限公司SQL注入漏洞" },
+            { text: '方略知识管理系统通杀', link: "/web/cert/方略知识管理系统通杀" },
           ]
         }
       ],
