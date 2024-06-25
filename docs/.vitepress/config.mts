@@ -200,9 +200,9 @@ export default defineConfig({
       {
         text: "安全项目",
         items: [
-            { text: "2024国护招聘", link: "/cooperation/prject/2024国护招聘"},
-            { text: "安全实习生招聘", link: "/cooperation/prject/安全实习生招聘"},
-            { text: "驻场安全服务工程师", link: "/cooperation/prject/驻场安全服务工程师"},           
+            { text: "2024国护招聘", link: "/cooperation/recruit/2024国护招聘"},
+            { text: "安全实习生招聘", link: "/cooperation/recruit/安全实习生招聘"},
+            { text: "驻场安全服务工程师", link: "/cooperation/recruit/驻场安全服务工程师"},           
           ]
       }
     ],
