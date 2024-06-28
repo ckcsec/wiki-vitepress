@@ -90,7 +90,7 @@ export default defineConfig({
             { text: 'SSRF服务端请求伪造', link: "/web/basis/SSRF服务端请求伪造" },
             { text: 'Linux提权总结', link: "/web/basis/Linux提权总结" },
             { text: '反弹shell备忘录', link: "/web/basis/反弹shell备忘录" },
-            { text: 'JAVA内存马研究0-1', link: "/web/basis/JAVA内存马研究0-1" }
+            { text: 'JAVA内存马研究0到1', link: "/web/basis/JAVA内存马研究0到1" }
           ]
         }
       ],
