@@ -219,7 +219,7 @@ export default defineConfig({
     },
     footer: {
       message: '基于 MIT 许可发布',
-      copyright: 'Copyright © 2021-2024 <a href="http://beian.miit.gov.cn/">鄂公网安备 42108302000084号</a>'
+      copyright: 'Copyright © 2021-2026 <a href="http://beian.miit.gov.cn/">鄂公网安备 42108302000084号</a>'
     }
   }
 })
