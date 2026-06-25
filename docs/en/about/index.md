@@ -1,23 +1,26 @@
-# About CKCsec Wiki
+# Library Introduction
 
-CKCsec Wiki is a security research knowledge base for practitioners. It collects practical notes across Web security, blockchain security, CTF, red team research, defensive operations, and related engineering topics.
+## About the Library
 
-The project aims to make security knowledge easier to search, learn, and share. The Chinese site remains the primary content source today, while this English section provides the first international entry point for readers and contributors.
+::: tip
+CKCsec Security Research Institute is a knowledge base for cybersecurity practitioners. It covers multiple security fields, including Web security, blockchain security, and CTF competitions, and aims to serve as a guiding light for people working in cybersecurity.
+:::
 
-## What You Can Find
+## Usage Notice
 
-- Security learning notes and operational references.
-- Vulnerability research, tool usage, and lab write-ups.
-- Blockchain security introductions and attack case summaries.
-- CTF category notes for Web, Pwn, Crypto, Reverse, and Misc.
-- Project information, support channels, and contribution direction.
+::: danger
+Any direct or indirect consequences or losses caused by spreading or using the information provided in this library are the sole responsibility of the user. The article authors assume no responsibility for them. CKCsec Security Research Institute reserves the right to modify and interpret this library. If you wish to reproduce or distribute the content of this library, you must preserve its integrity, including the copyright statement and all other content. Without the author's permission, you may not arbitrarily modify, add to, or remove content from these articles, nor may you use them for commercial purposes in any way. Unless otherwise stated in an article, ckcsec is the default author of that article.
+:::
 
-## Internationalization Plan
+## About Open Source
 
-The site now supports Chinese and English navigation. English entry pages are intentionally curated first, and deeper technical article translations can be added gradually without changing the existing Chinese article tree.
+> [!IMPORTANT]
+> I believe open source, free access, and sharing are the timeless themes of our era. Therefore, the articles and code in this library are public and can be downloaded freely. I hope they can help both experienced white hats and security beginners who are just getting started.
 
-## Links
+## Follow the Public Account
 
-- [Chinese homepage](/)
-- [English guide](/en/about/guide)
-- [GitHub repository](https://github.com/ckcsec/wiki-vitepress)
+::: tip
+Follow the public account to quickly receive security-related news and update notices!
+:::
+
+<center><p><img src="https://ckcsec.oss-cn-hangzhou.aliyuncs.com/img/gif.gif" width="50%" height="80%"></p></center>

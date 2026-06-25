@@ -1,20 +1,15 @@
-# Support CKCsec Wiki
+# Support the Project
 
-CKCsec Wiki is maintained as an open, community-facing knowledge base. Writing, reviewing, and updating security notes takes time, and every kind of support helps the project keep moving.
+## About Open Source
 
-## How To Support
+I believe open source, free access, and sharing are the timeless themes of our era. Therefore, the articles and code in this library are public and can be downloaded freely. I hope they can help you as you also work hard for our country's cybersecurity!
 
-- Star the [GitHub repository](https://github.com/ckcsec/wiki-vitepress).
-- Share useful articles with proper attribution and source links.
-- Submit fixes, typo corrections, or new article ideas through GitHub.
-- Follow the Chinese public account if you want faster project updates.
+Come click Star and give the library a little star ✨
 
-## Usage Notice
+![](https://ckcsec.oss-cn-hangzhou.aliyuncs.com/img/image-20240619160050150.png)
 
-The information in this knowledge base is provided for learning, research, and authorized security work. Any direct or indirect consequences caused by spreading, modifying, or using the information are the responsibility of the user.
+## Show Some Support
 
-Please keep attribution and copyright notices intact when sharing content. Do not modify, redistribute, or use project content for commercial purposes without permission.
+In this noisy and restless age, writing a blog often feels like doing it purely out of love. If you happen to be financially comfortable and feel that the library content has helped you, you can consider tipping this article, as if occasionally buying a coffee ☕️ for me while I keep updating it.
 
-## Acknowledgements
-
-This project is built with [VitePress](https://vitepress.dev/), the [VitePress repository](https://github.com/vuejs/vitepress), and modern static site hosting workflows.
+![](https://ckcsec.oss-cn-hangzhou.aliyuncs.com/img/3809119fc70a889dc5cc3a458f698db4_720.jpg)

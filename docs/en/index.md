@@ -12,7 +12,7 @@ hero:
       text: Start Reading
       link: /en/about/
     - theme: alt
-      text: 中文
+      text: Chinese
       link: /
     - theme: alt
       text: GitHub
@@ -27,7 +27,7 @@ features:
   - title: Practical Security
     details: Content focuses on hands-on notes across Web security, blockchain security, CTF, red team topics, and incident response.
   - title: Bilingual Growth
-    details: English entry pages are now available, with deeper article translations planned as the knowledge base evolves.
+    details: The English site mirrors the original article structure so readers can switch languages without losing the page tree.
 ---
 
 <style>
